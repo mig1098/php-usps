@@ -28,8 +28,9 @@ $resp = $simple_usps->DomesticRateCalculator(array(
     'body'     => $data
 ));
 print_r($resp);
-//
-response:
+
+
+//response:
 
 SimpleXMLElement Object
 (

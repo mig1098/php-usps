@@ -79,9 +79,9 @@ class Simple_usps{
         curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
         $results = curl_exec($ch);
         if ($results) {
-            //echo 'realizado';
+            //echo 'ok';
         }else{
-           // echo 'no realiza';
+           // echo 'error';
         }
         curl_close($ch);
         return $results;

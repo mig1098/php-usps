@@ -1,4 +1,4 @@
-## php-usps
+## php-usps-api
 
 library for usps api price calculator
 

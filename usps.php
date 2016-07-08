@@ -1,4 +1,8 @@
 <?php
+/**
+ * @author mig1098@hotmail.com
+ * @date 07/08/2016
+ */
 class Simple_usps{
     private $devurl  = "http://production.shippingapis.com/ShippingAPITest.dll";
     private $produrl = "http://production.shippingapis.com/ShippingAPI.dll";

@@ -93,8 +93,8 @@ class Simple_usps{
             $xml .= !empty($this->data['body']['Service'])       ? '<Service>'.$this->data['body']['Service'].'</Service>':'';
             $xml .= !empty($this->data['body']['ZipOrigination'])? '<ZipOrigination>'.$this->data['body']['ZipOrigination'].'</ZipOrigination>':'';
             $xml .= !empty($this->data['body']['ZipDestination'])? '<ZipDestination>'.$this->data['body']['ZipDestination'].'</ZipDestination>':'';
-            $xml .= !empty($this->data['body']['Pounds'])        ? '<Pounds>'.$this->data['body']['Pounds'].'</Pounds>':'';
-            $xml .= !empty($this->data['body']['Ounces'])        ? '<Ounces>'.$this->data['body']['Ounces'].'</Ounces>':'';
+            $xml .= isset($this->data['body']['Pounds'])         ? '<Pounds>'.$this->data['body']['Pounds'].'</Pounds>':'';
+            $xml .= isset($this->data['body']['Ounces'])         ? '<Ounces>'.$this->data['body']['Ounces'].'</Ounces>':'';
             $xml .= !empty($this->data['body']['Container'])     ? '<Container>'.$this->data['body']['Container'].'</Container>':'';
             $xml .= !empty($this->data['body']['Size'])          ? '<Size>'.$this->data['body']['Size'].'</Size>':'';
             $xml .= !empty($this->data['body']['Width'])         ? '<Width>'.$this->data['body']['Width'].'</Width>':'';

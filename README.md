@@ -28,4 +28,36 @@ $resp = $simple_usps->DomesticRateCalculator(array(
     'body'     => $data
 ));
 print_r($resp);
+//
+response:
+SimpleXMLElement Object
+(
+    [Package] => SimpleXMLElement Object
+        (
+            [@attributes] => Array
+                (
+                    [ID] => 1ST
+                )
+
+            [ZipOrigination] => 92676
+            [ZipDestination] => 20770
+            [Pounds] => 2
+            [Ounces] => 4
+            [Container] => NONRECTANGULAR
+            [Size] => LARGE
+            [Zone] => 8
+            [Postage] => SimpleXMLElement Object
+                (
+                    [@attributes] => Array
+                        (
+                            [CLASSID] => 1
+                        )
+
+                    [MailService] => Priority Mail 2-Day<sup>™</sup>
+                    [Rate] => 78.20
+                )
+
+        )
+
+)
 ```

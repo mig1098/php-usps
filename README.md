@@ -6,7 +6,7 @@ library for usps api price calculator
 
 ```
 include 'usps.php';
-$simple_usps = new simple_usps();
+$simple_usps = new Simple_usps();
 //test data
 $data = array(
     'Package' => '1ST',

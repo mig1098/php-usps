@@ -4,7 +4,7 @@ library for usps api price calculator
 
 ####Sample
 
-```
+```php
 include 'usps.php';
 $simple_usps = new Simple_usps();
 //test data
